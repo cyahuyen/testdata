@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Payment with E-globalcash</title>
+    </head>
+    <body>
+        <p>To Account : 88888888</p>
+        <p>Amount : 10</p>
+        <p>Currency : USD</p>
+        <p>Forced : 'comment that will'</p>
+        <p>URL Success: http://localhost/testdata/success.php</p>
+        <p>URL Success method: POST</p>
+        <p>URL Fail : http://localhost/testdata/fail.php</p>
+        <p>URL Fail Method : POST</p>
+        <p>Store Name : "Cya eglobalcash"</p>
+        <p>Email Link : http://www.example.com/status.aspx</p>
+        <p>Option1 : test1</p>
+        <p>Option2 : test2</p>
+        <p>Option3 : test3</p>
+        <form action="http://eglobalcash.cyahost.com/en/sci" method="POST">
+            <input type="hidden" name="acc_number" value="88888888">
+            <input type="hidden" name="acc_customer" value="31996355">
+            <input type="hidden" name="amount" value="10">
+            <input type="hidden" name="eg_currency" value="USD">
+            <input type="hidden" name="forced" value="comment that will">
+            <input type="hidden" name="url_success" value="http://localhost/testdata/success.php">
+            <input type="hidden" name="success_url_method" value="POST">
+            <input type="hidden" name="url_fail" value="http://localhost/testdata/fail.php">
+            <input type="hidden" name="fail_url_method" value="GET">
+            <input type="hidden" name="store_name" value="Cya eglobalcash">
+            <input type="hidden" name="email_link" value="http://www.example.com/status.aspx">
+            <input type="hidden" name="status_url_method" value="GET">
+            <input type="hidden" name="option1" value="test1">
+            <input type="hidden" name="option2" value="test2">
+            <input type="hidden" name="option3" value="test3">
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
